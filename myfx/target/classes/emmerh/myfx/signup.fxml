@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="emmerh.myfx.signupController">
+    <children>
+        <StackPane prefHeight="63.0" prefWidth="600.0" style="-fx-background-color: aqua;">
+            <children>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="51.0" prefWidth="594.0" StackPane.alignment="TOP_LEFT">
+                    <StackPane.margin>
+                        <Insets />
+                    </StackPane.margin>
+                    <children>
+                        <TextArea editable="false" layoutX="3.0" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="594.0" text="                         YOUNG SOLUTIONS LTD" wrapText="true" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="4.0">
+                            <font>
+                                <Font name="Georgia" size="24.0" />
+                            </font>
+                        </TextArea>
+                    </children>
+                </AnchorPane>
+            </children>
+        </StackPane>
+        <StackPane maxHeight="-Infinity" maxWidth="602.0" minHeight="-Infinity" minWidth="100.0" prefHeight="462.0" prefWidth="600.0" style="-fx-background-color: green;">
+            <children>
+                <SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="596.0">
+                    <items>
+                        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="460.0" prefWidth="594.0" style="-fx-border-color: greem;">
+                            <children>
+                                <TextArea editable="false" layoutX="170.0" layoutY="33.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="280.0" style="-fx-background-color: linen; -fx-position-shape: center; -fx-border-color: white; -fx-border-style: none;" text="       SIGN UP" wrapText="true" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="144.0" AnchorPane.topAnchor="33.0">
+                                    <font>
+                                        <Font name="Californian FB" size="32.0" />
+                                    </font>
+                                </TextArea>
+                                <Label layoutX="128.0" layoutY="151.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="96.0" style="-fx-background-color: gray;" text="Name" textFill="#1ed91e" textOverrun="CLIP" wrapText="true">
+                                    <font>
+                                        <Font size="27.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="nametxt" blendMode="MULTIPLY" layoutX="256.0" layoutY="145.0" prefHeight="39.0" prefWidth="248.0" promptText="name">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </TextField>
+                                <Label layoutX="128.0" layoutY="222.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="96.0" style="-fx-background-color: gray;" text="Email" textFill="#1ed91e" textOverrun="CLIP" wrapText="true">
+                                    <font>
+                                        <Font size="27.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="emailtxt" blendMode="MULTIPLY" layoutX="256.0" layoutY="219.0" prefHeight="39.0" prefWidth="248.0" promptText="email">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </TextField>
+                                <Label layoutX="128.0" layoutY="283.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="96.0" style="-fx-background-color: gray;" text="Password" textFill="#1ed91e" textOverrun="CLIP" wrapText="true">
+                                    <font>
+                                        <Font size="23.0" />
+                                    </font>
+                                </Label>
+                                <Button fx:id="submit" layoutX="239.0" layoutY="344.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: blue;" text="Submit">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Button>
+                                <TextArea editable="false" layoutX="97.0" layoutY="394.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="229.0" text="Already have an account?">
+                                    <font>
+                                        <Font name="System Bold" size="17.0" />
+                                    </font>
+                                </TextArea>
+                                <Button fx:id="signin" layoutX="339.0" layoutY="397.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="83.0" style="-fx-background-color: aqua;" text="Sign in" textFill="#e80303">
+                                    <font>
+                                        <Font name="Book Antiqua" size="15.0" />
+                                    </font>
+                                </Button>
+                        <PasswordField fx:id="passwordtxt" layoutX="256.0" layoutY="283.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="248.0" promptText="password" />
+                            </children>
+                        </AnchorPane>
+                    </items>
+                </SplitPane>
+            </children>
+        </StackPane>
+    </children>
+</VBox>
